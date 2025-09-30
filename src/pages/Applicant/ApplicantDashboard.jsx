@@ -65,21 +65,21 @@ const ApplicantDashboard = () => {
         <form className="flex flex-wrap gap-2 mb-6" onSubmit={handleSearch}>
           <input
             type="text"
-            placeholder="Job Title"
+            placeholder="Job Title (e.g. Developer)"
             value={searchTitle}
             onChange={(e) => setSearchTitle(e.target.value)}
             className="flex-1 px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
           <input
             type="text"
-            placeholder="Location"
+            placeholder="Location (e.g. pune)"
             value={searchLocation}
             onChange={(e) => setSearchLocation(e.target.value)}
             className="flex-1 px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
           <input
             type="text"
-            placeholder="Experience"
+            placeholder="Experience (e.g. 2 years)"
             value={searchExperience}
             onChange={(e) => setSearchExperience(e.target.value)}
             className="flex-1 px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
