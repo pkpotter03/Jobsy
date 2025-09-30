@@ -41,7 +41,6 @@ const LoginPage = () => {
 
   return (
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-600 to-purple-600">
-      {loading && <Loader size={80} message="Logging in..." />}
       <div className="bg-white rounded-lg shadow-lg w-full max-w-md p-8 z-10">
         <h2 className="text-2xl font-bold text-center mb-6 text-blue-600">
           Login
@@ -108,6 +107,7 @@ const LoginPage = () => {
           </div>
 
           {error && <p className="text-red-500 text-sm">{error}</p>}
+          {loading && <Loader size={80} message="Logging in..." />}
 
           <button
             type="submit"
